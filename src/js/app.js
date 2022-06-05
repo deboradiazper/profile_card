@@ -36,21 +36,21 @@ function render(variables = {}) {
     variables.lastname ? variables.lastname : " "
   }</h1> 
           <h2>${variables.role ? variables.role : " "}</h2>
-          <h3>${variables.city ? variables.city : " "}; ${
+          <h3>${variables.city ? variables.city : " "} ${
     variables.country ? variables.country : " "
   }</h3>
           <ul class=${variables.socialMediaPosition}>
             <li><a href="https://twitter.com/${
-              variables.twitter
+              variables.twitter ? variables.socialMediaPosition : " "
             }"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${
-              variables.github
+              variables.github ? variables.socialMediaPosition : " "
             }"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/${
-              variables.linkedin
+              variables.linkedin ? variables.socialMediaPosition : " "
             }"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/${
-              variables.instagram
+              variables.instagram ? variables.socialMediaPosition : " "
             }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
